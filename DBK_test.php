@@ -20,7 +20,7 @@
 
       $pdo = new PDO('mysql:dbname=a18micar_dbk2020;host=localhost', 'sqllab', 'Tomten2009')
 
-      foreach ($pdo->query('SELECT * FROM Verktyg;') as $row) {
+      foreach($pdo->query( 'SELECT * FROM Verktyg;' ) as $row){
       debug($row);
       }
 

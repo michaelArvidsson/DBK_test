@@ -7,6 +7,10 @@
   <style>
     body {
       background-color: greenyellow;
+      background-image: url(christmas-decoration.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
       margin: 0px;
     }
 
@@ -27,18 +31,27 @@
     }
 
     #content {
-      background-color: greenyellow;
+      background: rgba(76, 175, 80, 0.8);
       width: 400px;
       margin: auto;
       margin-top: 20px;
       box-shadow: 0px 0px 10px 2px;
       padding-bottom: 50px;
     }
+
+    #header {
+      width: 600px;
+      background-color: red;
+      color: white;
+      margin: auto;
+    }
   </style>
 </head>
 
 <body>
-  <h1 id='phead'>TOMTENS DATABAS 2020</h1>
+  <div id=header>
+    <h1 id='phead'>TOMTENS DATABAS 2020</h1>
+  </div>
   <div id='content'>
     <table border='1'>
       <?php
@@ -92,7 +105,6 @@
     <form id='selectf' action="Reponse_DBK2020.php" method="post">
       <div id="input">
         <input type="submit" value="Visa alla">
-        <input type='submit' name='searchbutton' value='Search'>
       </div>
     </form>
   </div>
